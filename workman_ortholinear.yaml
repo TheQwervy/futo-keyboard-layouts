@@ -1,4 +1,6 @@
 name: Workman Ortholinear
+overrideWidths:
+  Custom1: 0.2
 rows:
   - letters:
     - q
@@ -15,40 +17,45 @@ rows:
       attributes:
         width: Regular
         style: Functional
-  - letters: 
-    - a
-    - s
-    - h
-    - t
-    - g
-    - y
-    - n
-    - e
-    - o
-    - [i,\]
   - letters:
-    - z
+    - [a,"@"]
+    - [s,"#"]
+    - [h,$]
+    - [t,"%"]
+    - [g,^]
+    - [y,"&"]
+    - [n,—,–,"-",_]
+    - [e,=,+]
+    - [o,"(","[","{","<"]
+    - [i,")","]","}",">"]
+  - letters:
+    - [z,"!icon/settings_key|!code/key_settings"]
     - x
     - m
     - c
     - v
     - k
     - l
-    - [".",","]
-    - ["?","/"]
+    - ","
+    - [".",\,"|"]
     - type: base
       spec: "!icon/shift_key|!code/key_shift"
       attributes: 
         width: Regular
         style: Functional
   - bottom:
-    - $symbols
     - type: base
-      spec: "!icon/action_emoji|!code/action_emoji"
+      spec: "?123|!code/key_switch_alpha_symbol"
+      attributes:
+        width: Regular
+        style: Functional
+        moreKeyMode: OnlyExplicit
+    - $action
     - $space
     - type: base
       spec: "!icon/enter_key|!code/key_enter"
-      moreKeys: "!icon/action_settings|!code/action_settings"
+      moreKeys: "!icon/action_clipboard_history|!code/action_clipboard_history,!icon/action_redo|!code/action_redo,!icon/action_undo|!code/action_undo"
       attributes:
-        width: FunctionalKey
+        width: Custom1
         style: Action
+        moreKeyMode: OnlyExplicit
