@@ -1,6 +1,4 @@
 name: Qwerty Ortholinear
-overrideWidths:
-  Custom1: 0.2
 rows:
   - letters:
     - q
@@ -57,6 +55,6 @@ rows:
       spec: "!icon/enter_key|!code/key_enter"
       moreKeys: "!icon/action_clipboard_history|!code/action_clipboard_history,!icon/action_redo|!code/action_redo,!icon/action_undo|!code/action_undo"
       attributes:
-        width: Custom1
+        width: FunctionalKey
         style: Action
         moreKeyMode: OnlyExplicit
