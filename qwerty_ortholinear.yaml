@@ -1,26 +1,28 @@
 name: Qwerty Ortholinear
+attributes:
+  moreKeyMode: OnlyFromLetter
 rows:
   - letters:
-    - q
-    - w
-    - e
-    - r
-    - t
-    - y
-    - u
-    - i
-    - o
-    - p
+    - [q,1]
+    - [w,2]
+    - [e,3]
+    - [r,4]
+    - [t,5]
+    - [y,6]
+    - [u,7]
+    - [i,8]
+    - [o,9]
+    - [p,0]
   - letters: 
-    - [a,"@"]
-    - [s,"#"]
+    - [a,'@']
+    - [s,'#']
     - [d,$]
-    - [f,"%"]
-    - [g,^]
-    - [h,"&"]
-    - [j,—,–,"-",_]
+    - [f, '%|%']
+    - [g,'^']
+    - [h,'&']
+    - [j,'-',–,—,_]
     - [k,=,+]
-    - [l,"(","[","{","<"]
+    - [l,(,'[','{','<']
     - type: base
       spec: "!icon/delete_key|!code/key_delete"
       moreKeys: "),],},>"
@@ -28,15 +30,15 @@ rows:
         width: Regular
         style: Functional
   - letters:
-    - z
-    - x
-    - c
-    - v
-    - b
-    - n
-    - m
-    - ","
-    - [".",\,"|"]
+    - [z,"!icon/settings_key|!code/key_settings"]
+    - [x,'*']
+    - [c,'"']
+    - [v,"'"]
+    - [b,':']
+    - [n,;]
+    - [m,'!']
+    - [';','?',/]
+    - ['.','\','|']
     - type: base
       spec: "!icon/shift_key|!code/key_shift"
       attributes: 
@@ -48,7 +50,6 @@ rows:
       attributes:
         width: Regular
         style: Functional
-        moreKeyMode: OnlyExplicit
     - $action
     - $space
     - type: base
@@ -57,4 +58,3 @@ rows:
       attributes:
         width: FunctionalKey
         style: Action
-        moreKeyMode: OnlyExplicit
