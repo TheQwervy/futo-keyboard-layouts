@@ -1,41 +1,44 @@
 name: Workman Ortholinear
+attributes:
+  moreKeyMode: OnlyFromLetter
 rows:
   - letters:
-    - q
-    - d
-    - r
-    - w
-    - b
-    - j
-    - f
-    - u
-    - p
+    - [q,1]
+    - [d,2]
+    - [r,3]
+    - [w,4]
+    - [b,5]
+    - [j,6]
+    - [f,7]
+    - [u,8]
+    - [p,9]
     - type: base
       spec: "!icon/delete_key|!code/key_delete"
+      moreKeys: 0
       attributes:
         width: Regular
         style: Functional
   - letters:
-    - [a,"@"]
-    - [s,"#"]
+    - [a,'@']
+    - [s,'#']
     - [h,$]
-    - [t,"%"]
-    - [g,^]
-    - [y,"&"]
-    - [n,—,–,"-",_]
+    - [t,'%|%']
+    - [g,'^']
+    - [y,'&']
+    - [n,'-',–,—,_]
     - [e,=,+]
-    - [o,"(","[","{","<"]
-    - [i,")","]","}",">"]
+    - [o,(,'[','{','<']
+    - [i,),']','}','>']
   - letters:
     - [z,"!icon/settings_key|!code/key_settings"]
-    - x
-    - m
-    - c
-    - v
-    - k
-    - l
-    - ","
-    - [".",\,"|"]
+    - [x,'*']
+    - [m,'"']
+    - [c,"'"]
+    - [v,':']
+    - [k,';']
+    - [l,'!']
+    - [',','?',/]
+    - ['.','\','|']
     - type: base
       spec: "!icon/shift_key|!code/key_shift"
       attributes: 
@@ -47,7 +50,6 @@ rows:
       attributes:
         width: Regular
         style: Functional
-        moreKeyMode: OnlyExplicit
     - $action
     - $space
     - type: base
@@ -56,4 +58,3 @@ rows:
       attributes:
         width: FunctionalKey
         style: Action
-        moreKeyMode: OnlyExplicit
