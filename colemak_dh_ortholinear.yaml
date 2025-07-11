@@ -1,41 +1,44 @@
 name: Colemak DH Ortholinear
+attributes:
+  moreKeyMode: OnlyFromLetter
 rows:
   - letters:
-    - q
-    - w
-    - f
-    - p
-    - b
-    - j
-    - l
-    - u
-    - y
+    - [q,1]
+    - [w,2]
+    - [f,3]
+    - [p,4]
+    - [b,5]
+    - [j,6]
+    - [l,7]
+    - [u,8]
+    - [y,9]
     - type: base
       spec: "!icon/delete_key|!code/key_delete"
+      moreKeys: 0
       attributes:
         width: Regular
         style: Functional
   - letters:
-    - [a,"@"]
-    - [r,"#"]
+    - [a,'@']
+    - [r,'#']
     - [s,$]
-    - [t,"%"]
-    - [g,^]
-    - [m,"&"]
-    - [n,—,–,"-",_]
+    - [t,'%|%']
+    - [g,'^']
+    - [m,'&']
+    - [n,'-',–,—,_]
     - [e,=,+]
-    - [i,"(","[","{","<"]
-    - [o,")","]","}",">"]
+    - [i,(,'[','{','<']
+    - [o,),']','}','>']
   - letters:
     - [z,"!icon/settings_key|!code/key_settings"]
-    - x
-    - c
-    - d
-    - v
-    - k
-    - h
-    - ","
-    - [".",\,"|"]
+    - [x,'*']
+    - [c,'"']
+    - [d,"'"]
+    - [v,':']
+    - [k,';']
+    - [h,'!']
+    - [',','?',/]
+    - ['.','\','|']
     - type: base
       spec: "!icon/shift_key|!code/key_shift"
       attributes: 
@@ -47,7 +50,6 @@ rows:
       attributes:
         width: Regular
         style: Functional
-        moreKeyMode: OnlyExplicit
     - $action
     - $space
     - type: base
@@ -56,4 +58,3 @@ rows:
       attributes:
         width: FunctionalKey
         style: Action
-        moreKeyMode: OnlyExplicit
