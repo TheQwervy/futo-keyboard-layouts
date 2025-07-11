@@ -150,6 +150,7 @@ languages:
     - pcqwerty
     - nordic
     - qwerty_ortholinear
+    - colemak_ortholinear
     - colemak_dh_ortholinear
     - workman_ortholinear
   en_IN:
@@ -164,6 +165,7 @@ languages:
     - pcqwerty
     - nordic
     - qwerty_ortholinear
+    - colemak_ortholinear
     - colemak_dh_ortholinear
     - workman_ortholinear
   en_US:
@@ -178,6 +180,7 @@ languages:
     - pcqwerty
     - nordic
     - qwerty_ortholinear
+    - colemak_ortholinear
     - colemak_dh_ortholinear
     - workman_ortholinear
   enf:
